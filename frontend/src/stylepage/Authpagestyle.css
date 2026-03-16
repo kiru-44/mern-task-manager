@@ -1,0 +1,121 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+background:linear-gradient(135deg,#667eea,#764ba2);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.auth-box{
+width:900px;
+height:500px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+display:flex;
+position:relative;
+}
+
+/* IMAGE PANEL */
+
+.image-panel{
+width:50%;
+background:linear-gradient(135deg,#5f72bd,#9b23ea);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.image-panel img{
+width:90%;
+max-height:450px;
+object-fit:contain;
+}
+
+
+/* FORM */
+
+.form{
+width:50%;
+padding:60px;
+position:absolute;
+top:0;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+transition:0.6s;
+background:white;
+}
+
+.form h2{
+margin-bottom:20px;
+}
+
+.form input{
+padding:12px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.form button{
+padding:12px;
+background:#667eea;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.form button:hover{
+background:#5563c1;
+}
+
+.form p{
+margin-top:10px;
+}
+
+.form span{
+color:#667eea;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* POSITION */
+
+.login{
+left:50%;
+}
+
+.register{
+left:100%;
+}
+
+/* SLIDE EFFECT */
+
+.auth-box.active .login{
+left:-50%;
+}
+
+.auth-box.active .register{
+left:50%;
+}
